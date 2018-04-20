@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Windows
+# =========================
+
+# Folder config file
+Desktop.ini
