@@ -14,6 +14,15 @@ This project sets out to examine the well known Fisher's Iris data set <sup>[1](
 
 ---
 ### Fisher's Iris data set
+
+#### The who, what, when, where and why
+
+As this project is inspired by Fisher's Iris data set let us first look at what the data set is and how it was compiled.
+
+##### Who
+
+Ronald Fisher (17 February 1890 – 29 July 1962), is considered one of the most important statistician of the twentieth century <sup>[2](https://doi.org/10.1093/ref:odnb/33146)</sup>. During his lifetime Fisher developed much of the theory behind modern statistics and a range of statistical tests still used today - such as the analysis of variance, ANOVA for short. However, Fisher's work was not limited to the field of mathematics. A founding member of the Cambridge University Eugenics Society, Fisher published numerous papers in the field of genetics exploring the inheritance of continuous traits, (which lay the foundations for his later work on variance), and the basis for population genetics, which examines the genetic differences within and between populations as part of evolutionary biology (*Ibid.*).  
+
 ---
 ### Investigation
 ---
