@@ -31,11 +31,13 @@ By examining all of the available information from multiple variables at the sam
 
 From this analysis, we see both the differences and commonalities of the provided variables and the relationships between them. Exploring the variables in this way recognises the characteristics of each class which can be used to predict the possibility of an object being classified within a given group or category.
 
-Fisher's 1936 paper, illustrated the use of this statistical method with a data set compiled by botanist Edgar Anderson - the classic Iris data set <sup>[4](http://www.jstor.org/stable/2394164)</sup>. 
+Fisher's 1936 paper, illustrated the use of this statistical method with a data set compiled by botanist Edgar Anderson - the classic Iris data set <sup>[8](http://www.jstor.org/stable/2394164)</sup>. 
 
-The Iris data set is a multivariate data set measuring the form and structure for related species of the flowering plant - Iris<sup>[8](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. The data set contains 150 records subdivided into 5 attributes: the species (class) of Iris plant with 50 samples drawn from each of 3 related species (Iris setosa, Iris versicolor and Iris virginica and for each sample, a set of 4 measurements consisting of the length and width of the sepal and petal, in centimetres.
+The Iris data set is a multivariate data set measuring the form and structure for related species of the flowering plant - Iris<sup>[9](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. The data set contains 150 records subdivided into 5 attributes: the species (class) of Iris plant with 50 samples drawn from each of 3 related species (Iris setosa, Iris versicolor and Iris virginica) and for each sample, a set of 4 measurements consisting of the length and width of the sepal and petal, in centimetres.
 
-Sepals, the outermost layer of the flower are easily distinguished on the Iris as they fall downwards away from the flower's centre. The petals of an Iris plant are internal of the sepals and are more upright and rigid<sup>[8](https://www.independent.ie/regionals/sligochampion/lifestyle/irises-coming-into-flower-in-gardens-and-in-the-wild-31252322.html)</sup>.
+Sepals, the outermost layer of the flower are easily distinguished on the Iris as they fall downwards away from the flower's centre. The petals of an Iris plant are internal of the sepals and are more upright and rigid<sup>[10](https://www.independent.ie/regionals/sligochampion/lifestyle/irises-coming-into-flower-in-gardens-and-in-the-wild-31252322.html)</sup>.
+
+Fisher applied the linear discriminant model to analyse the data set, using the length and width variables associated with the sepals and petals to classify and predict the class for each sample. He found that the Iris setosa class was linearly separable from the other classes. However, Iris versicolor and Iris virginica were not linearly separable from each other and that overlap between these two classes prevented full classification<sup>[11](https://doi.org/10.1093/ref:odnb/33146)</sup>.
 
 
 ---
