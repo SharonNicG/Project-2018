@@ -39,6 +39,7 @@ Sepals, the outermost layer of the flower are easily distinguished on the Iris a
 
 Fisher applied the linear discriminant model to analyse the data set, using the length and width variables associated with the sepals and petals to classify and predict the class for each sample. He found that the Iris setosa class was linearly separable from the other classes. However, Iris versicolor and Iris virginica were not linearly separable from each other and that overlap between these two classes prevented full classification<sup>[11](https://doi.org/10.1093/ref:odnb/33146)</sup>.
 
+The Iris data set and Fisher's paper are still extensively used. While there are many reasons for this a contributing factor is the accessibility of the data. It is easy to understand and explain while still providing a practical amount of information to work with - 150 records, across 3 classes with 4 attributes per record. Additionally, as Fisher's analysis shows the data set offers both a linearly separable class and two classes that are more challenging to separate allowing it to be used to illustrate a variety of studies. Furthermore, using a classic data set as a benchmark set of results facilitates performance comparison of new techniques and algorithms.
 
 ---
 ### Investigation
