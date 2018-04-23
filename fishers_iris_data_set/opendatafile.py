@@ -11,7 +11,7 @@ f = open('iris.csv')
 # https://www.programiz.com/python-programming/file-operation
 f.readable()
 
-# output of information onfile
+# output of information in file
 print(f.read())
 
 # closes opened file
