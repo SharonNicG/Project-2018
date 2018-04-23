@@ -43,6 +43,10 @@ The Iris data set and Fisher's paper are still extensively used. While there are
 
 ---
 ### Investigation
+
+In this section, we will conduct a preliminary review of the Iris data set by accessing and reading the data set file, familiarising ourselves with its content and then conducting a summary review of the data.
+
+
 ---
 ### Analysis
 ---
