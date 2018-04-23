@@ -4,15 +4,8 @@
 
 # Python script that opens, checks and prints the Iris dataset
 
-# opens data file in current workflow
-f = open('iris.csv')
-
-# Returns True if the file stream can be read from.
-# https://www.programiz.com/python-programming/file-operation
-f.readable()
-
-# output of information in file
-print(f.read())
-
-# closes opened file
-f.close
+# opens CSV file and extracts the data for reading
+with open('iris.csv') as f:
+    
+    # accesses 'f' file and prints output of content
+    print (f.read())
