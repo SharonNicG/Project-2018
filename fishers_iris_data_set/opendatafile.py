@@ -7,5 +7,8 @@
 # opens CSV file and extracts the data for reading
 with open('iris.csv') as f:
     
-    # accesses 'f' file and prints output of content
-    print (f.read())
+    # iterates over each line of data in opened file
+    for line in f:
+
+       # outputs requested unpacked arguments as split list  
+       print (*line.split(','))
