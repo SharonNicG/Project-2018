@@ -23,3 +23,4 @@ with open('iris_bup.csv') as bup:
 
        # outputs requested unpacked arguments as split list  
        print (*line.split(','))
+        
