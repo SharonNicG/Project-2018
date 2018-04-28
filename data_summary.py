@@ -1,5 +1,6 @@
 # Sharon Gibbons, 21-04-2018
-# Summary review of Iris data set
+# Summary review of Iris data set using pandas library
+# https://www.datacamp.com/community/blog/python-pandas-cheat-sheet
 
 # Load NumPy package
 import numpy as np 
