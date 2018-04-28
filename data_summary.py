@@ -21,3 +21,6 @@ print(df.shape)
 
 # Summary of basic data about Dataframe and it's data
 print(df.info())
+
+# Check for missing attribute values
+print(df.count())
