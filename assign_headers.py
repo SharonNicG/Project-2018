@@ -1,7 +1,6 @@
 # Sharon Gibbons, 21-04-2018
 # Assign headers to columns in pandas datafrome
 
-
 # Load pandas package
 import pandas as pd
 
