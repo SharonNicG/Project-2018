@@ -21,3 +21,9 @@ print(df.min())
 
 # Identifies the highest value in each column
 print(df.max())
+
+# Provides mean/average value of each column
+print(df.mean())
+
+#Provides median/midpoint value for each column
+print(df.median())
