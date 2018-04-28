@@ -18,3 +18,6 @@ df = pd.read_csv(datafile, names=headers)
 
 # View instances i.e the number of rows and columns
 print(df.shape)
+
+# Summary of basic data about Dataframe and it's data
+print(df.info())
