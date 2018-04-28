@@ -29,4 +29,5 @@ print(df.mean())
 print(df.median())
 
 # Provides summary statistics for numerical columns
+# Includes count, min, max, mean, std and percentiles for data in each column
 print(df.describe())
