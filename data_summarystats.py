@@ -28,6 +28,9 @@ print(df.mean())
 # Provides median/midpoint value for each column
 print(df.median())
 
+# Provides the standard deviation (std) for each column
+df.std()
+
 # Provides summary statistics for numerical columns
 # Includes count, min, max, mean, std and percentiles for data in each column
 print(df.describe())
