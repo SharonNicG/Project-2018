@@ -25,5 +25,8 @@ print(df.max())
 # Provides mean/average value of each column
 print(df.mean())
 
-#Provides median/midpoint value for each column
+# Provides median/midpoint value for each column
 print(df.median())
+
+# Provides summary statistics for numerical columns
+print(df.describe())
