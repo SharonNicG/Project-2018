@@ -38,4 +38,4 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
 
     # Provides summary statistics for numerical columns
     # Includes count, min, max, mean, std and percentiles for data in each column
-    print("Statistical summary of data \n{}".format(df.describe()))
+    print("Statistical summary of data: \n{}".format(df.describe()))
