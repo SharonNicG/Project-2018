@@ -46,6 +46,10 @@ The Iris data set and Fisher's paper are still extensively used. While there are
 
 In this section, we will conduct a preliminary review of the Iris data set by accessing and reading the data set file, familiarising ourselves with its content and then conducting a summary review of the data.
 
+#### Problem Definition
+
+The problem presented here is how to accurately predict the class of an Iris plant. Utilizing the Iris data setsup>[11](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>, which provides data on 150 samples of 3 Iris plants (50 samples of each class of Iris) and the corresponding length and width measurements of the sepal and petals for each plant, this investigation aims to predict the class of Iris of Iris plant based on the provided measurements.
+
 
 ---
 ### Analysis
