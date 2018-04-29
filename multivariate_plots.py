@@ -19,3 +19,7 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
 
     # Read csv data file with pandas read_csv function
     df = pd.read_csv(datafile, header=None, names=headers)
+
+    # Scatterplot matrix to help identify linear correlation between multiple variables
+    scatter_matrix(dataset)
+    plt.show()
