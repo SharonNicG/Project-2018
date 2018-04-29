@@ -22,5 +22,5 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
 
     # box and whisker plot to show range and median of data
     # https://matplotlib.org/api/_as_gen/matplotlib.pyplot.boxplot.html
-    df.plot(kind='box', layout=(2,2))
+    df.plot(kind='box', layout=(2,2), subplots=True)
     plt.show()
