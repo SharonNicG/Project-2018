@@ -50,6 +50,19 @@ In this section, we will conduct a preliminary review of the Iris data set by ac
 
 The problem presented here is how to accurately predict the class of an Iris plant. Utilizing the Iris data setsup>[11](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>, which provides data on 150 samples of 3 Iris plants (50 samples of each class of Iris) and the corresponding length and width measurements of the sepal and petals for each plant, this investigation aims to predict the class of Iris of Iris plant based on the provided measurements.
 
+#### Preparation
+##### Environment
+
+Before proceeding considering how the data will be used to address the classification problem and what tools will be needed to help with this is necessary.Based on Fisher's work, it can be assumed that this investigation will require work on numerical data in tables and arrays and that a number of mathematical computations of the data (e.g. mean) will be required. Additionally, visualizing the data for review and presentation will be beneficial. 
+
+In reviewing scientific computing packages for Python a few seem to meet the requirements of this investigation.
+* NumPy (Numerical Python) is an indispensable library for scientific computing in Python. It is the library that the other tools we'll be using are built upon. NumPy allows us to work with arrays and data structures easily and quickly and crucially it performs calculations across entire arrays.
+
+* Pandas (Python Data Analysis Library) is a library for the Python language, built on the numPy package, that facilitates the manipulation of data structures (e.g. tables) making data easier to work with and conduct an analysis of.
+
+* SciPy is an expanded library for scientific computing, built on the NumPy package. It includes a module for linear algebra which based on Fisher's work ought to be useful in classifying the samples from the dataset.
+
+* Matplotlib is an extension of NumPy that generated 2D graphs, such as plots, histograms and scatter plot that enables the visualization of data to identify and present analysis and result. 
 
 ---
 ### Analysis
