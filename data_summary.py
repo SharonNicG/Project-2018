@@ -18,17 +18,17 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
     df = pd.read_csv(datafile, header=None, names=headers)
 
     # View first 5 rows and headers 
-    print(df.head())
+    print("This is what the first 5 rows of data look like: \n{}".format(df.head()))
     print('\n')
 
     # View instances i.e the number of rows and columns
-    print(df.shape)
+    print("This is the number of rows and columns in this dataset: \n{}".format(df.shape))
     print('\n')
 
     # Summary of basic data about Dataframe and it's data
-    print(df.info())
+    print("Here is a summary of the basic information about this dataset:")
+    df.info()
     print('\n')
 
-    # Check for missing attribute values
-    print(df.count())
-    print('\n')
+    # Count of values in dataset
+    print("Here is a count of the values in the dataset: \n{}".format(df.count()))
