@@ -19,3 +19,8 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
 
     # Read csv data file with pandas read_csv function
     df = pd.read_csv(datafile, header=None, names=headers)
+
+    # box and whisker plot to show range and median of data
+    # https://matplotlib.org/api/_as_gen/matplotlib.pyplot.boxplot.html
+    df.plot(kind='box')
+    plt.show()
