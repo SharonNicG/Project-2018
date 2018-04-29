@@ -28,7 +28,7 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
     plt.ylabel("Number of instances")
 
     # Histogram plot presenting data as a bar chart showing a continuous range of data values
-    df.hist()
+    df.hist(edgecolor='black')
     plt.title("Iris Data Set Histogram")
     plt.xlabel("Measurement in cms")
     plt.ylabel("Number of instances")
