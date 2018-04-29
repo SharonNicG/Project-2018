@@ -33,9 +33,9 @@ From this analysis, we see both the differences and commonalities of the provide
 
 Fisher's 1936 paper, illustrated the use of this statistical method with a data set compiled by botanist Edgar Anderson - the classic Iris data set <sup>[8](http://www.jstor.org/stable/2394164)</sup>. 
 
-The Iris data set is a multivariate data set measuring the form and structure for related species of the flowering plant - Iris<sup>[9](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. The data set contains 150 records subdivided into 5 attributes: the species (class) of Iris plant with 50 samples drawn from each of 3 related species (Iris setosa, Iris versicolor and Iris virginica) and for each sample, a set of 4 measurements consisting of the length and width of the sepal and petal, in centimetres.
+The Iris data set is a multivariate data set measuring the form and structure for related species of the flowering plant - Iris<sup>[9](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. The dataset contains 150 records subdivided into 5 attributes: the species (class) of Iris plant with 50 samples drawn from each of 3 related species (Iris setosa, Iris versicolor and Iris virginica) and for each sample, a set of 4 measurements consisting of the length and width of the sepal and petal, in centimetres.
 
-Sepals, the outermost layer of the flower are easily distinguished on the Iris as they fall downwards away from the flower's centre. The petals of an Iris plant are internal of the sepals and are more upright and rigid<sup>[10](https://www.independent.ie/regionals/sligochampion/lifestyle/irises-coming-into-flower-in-gardens-and-in-the-wild-31252322.html)</sup>.
+Sepals, the outermost layer of the flower are easily distinguished on the Iris as they fall downwards away from the flower's centre. The petals of an Iris plant are internal to the sepals and are more upright and rigid<sup>[10](https://www.independent.ie/regionals/sligochampion/lifestyle/irises-coming-into-flower-in-gardens-and-in-the-wild-31252322.html)</sup>.
 
 Fisher applied the linear discriminant model to analyse the data set, using the length and width variables associated with the sepals and petals to classify and predict the class for each sample. He found that the Iris setosa class was linearly separable from the other classes. However, Iris versicolor and Iris virginica were not linearly separable from each other and that overlap between these two classes prevented full classification<sup>[11](https://doi.org/10.1093/ref:odnb/33146)</sup>.
 
@@ -44,7 +44,7 @@ The Iris data set and Fisher's paper are still extensively used. While there are
 ---
 ### Investigation
 
-In this section, we will conduct a preliminary review of the Iris data set by accessing and reading the data set file, familiarising ourselves with its content and then conducting a summary review of the data.
+In this section, we will conduct a preliminary review of the Iris data set by accessing and reading the dataset file, familiarising ourselves with its content and then conducting a summary review of the data.
 
 #### Problem Definition
 
@@ -89,24 +89,25 @@ Thinking about how we are going to use the data we need to consider if any prepr
 
 Following on from the preliminary review of the data file we can proceed to a summary analysis of the data using the identified libraries. 
 
-###### Importing libraries
+##### Importing libraries
 
 To include the libraries in our script we use the 'import' statement. The libraries are imported here using the abbreviation conventions adopted by the Python community - NumPy(np), ScPy(sc), pandas(pd) and Matplotlib(plt). While SciPy has been abbreviated here to 'sc' it should be noted that the SciPy documentation recommends importing the required functions from SciPy and calling these as needed. The SciPy namespace only contains the functions imported from NumPy so better practice is to import the required function from within the library e.g. from 'SciPy' import 'stats'. At this point, we are not sure what functions are required so we'll retain the current library and review this as we progress. 
 
-###### Summary of dataset
+##### Summary of dataset
 
 While the UCI repository provides details of the number of instances and attributes, to ensure we haven't lost anything in transferring/copying the file we can check this also. using the pandas command 'df.shape()' we can see the number of columns and rows in the dataset. We can see more details on the data structure using the 'df.info()' method which provides index, datatype, and memory information - and confirms that we have 150 results recorded in each column (4 numeric/floats and 1 text/object). Using 'df.count()', we can identify the any NULL observations. 
 
-###### Assigning headers
+##### Assigning headers
 
 As identified earlier the csv file from UCI doesn't include headers. While we know what data has been collected for the dataset 9from our review of Fisher's work) we need to be able to link what is presented in the columns and rows to the correct measurement/variable. The first thing we need to do is load the csv file into Python using a 'with' function and then read it using the pandas function 'pd.read_csv'. Viewing the output of this shows separated columns of data with row numbers in the left margin. By creating a headers array and pass this new variable to the 'read-csv' function. To see a summary view of the column headers we can use the 'dataframe.head()' function which returns, de default, the first 5 rows of the dataset - allowing us to see the headers in place.
 
-###### Summary statistics
+##### Summary statistics
 
 Having looked at the data within the dataset file, we can now look at some of the information that can give us a simple description of the data.
 
 As each column contains the data relating to a measurement (i.e. sepal length, sepal width, petal length, petal width), we can conduct a summary review of the data in each column using a series of pandas commands.'df.min' and 'df.max' return the lowest and highest values for each column. 'df.mean'returns the average value of each column while 'df.mean' returns the mean or midpoint value for the range of values in each column. Standard deviation, which shows how much the values in each column differ from the mean value for that range, can be obtained using 'df.std'. The command 'df.describe' returns a selection of summary statistics for any column of numerical data including a count of records, minimum, maximum, mean and standard deviation values, and percentiles. 
 
+While these statistics provide a general overview of the data for the purposes of this investigation comparative statistics of each class/species of Iris plant would be informative. The above panda commands can be applied to each of the classes separately with the function 'groupby('class')' e.g. df.min becomes df.groupby('class').min()). For the summary statistics provided by 'df.describe' appending 'groupby('class')' produces an unwieldy table of information, the inclusion of the 'stack' function which reshapes the data by moving the innermost column index to become the innermost row index, allowing us to see the data related to each class group as individual tables. 
 
 ---
 ### Analysis
@@ -114,3 +115,41 @@ As each column contains the data relating to a measurement (i.e. sepal length, s
 ### Conclusions
 ---
 **Bibliography**
+
+Anderson, E.. (1936). The Species Problem in Iris. Annals of the Missouri Botanical Garden. 23 (3), 457-509.
+
+API - importing from Scipy. SciPy v1.0.0 Reference Guide. 2018. API - importing from Scipy SciPy v1.0.0 Reference Guide. [ONLINE] Available at: https://docs.scipy.org/doc/scipy/reference/api.html#guidelines-for-importing-functions-from-scipy. 
+
+Bronshtein, A., 2017. A Quick Introduction to the Pandas Python Library. Towards Data Science. [ONLINE] Available at:  https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673
+
+Bronshtein, A., 2017. A Quick Introduction to the NumPy Library ñ Towards Data Science. Towards Data Science. [ONLINE] Available at: https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db
+
+Butterfield, A., Ngondi, G.E. and Kerr, A. (2016) A Dictionary of Computer Science, 7th edn., Oxford: Oxford University Press.
+
+DataCamp Community. 2018. Scipy Tutorial: Vectors and Arrays (Linear Algebra) (article) - DataCamp. [ONLINE] Available at: https://www.datacamp.com/community/tutorials/python-scipy-tutorial.
+
+Dua, D. and Karra Taniskidou, E.. (2017). Iris Data Set. Available: http://archive.ics.uci.edu/ml/datasets/Iris. 
+
+Fisher, R.A.. (1936). The Use of Multiple Measurements in Taxonomic Problems. Annals of Human Genetics. 7 (2), 179–188.
+
+Independent.ie. 2018. Irises coming into flower in gardens and in the wild - Independent.ie. [ONLINE] Available at: https://www.independent.ie/regionals/sligochampion/lifestyle/ Irises-coming-into-flower-in-gardens-and-in-the-wild-31252322.html. 
+
+Introduction to SciPy v1.0.0 Reference Guide. 2018. Introduction to SciPy v1.0.0 Reference Guide. [ONLINE] Available at: https://docs.scipy.org/doc/scipy/reference/tutorial/general.html. 
+
+Matplotlib: Python plotting ó Matplotlib 2.2.2 documentation. 2018. Matplotlib: Python plotting ó Matplotlib 2.2.2 documentation. [ONLINE] Available at: https://matplotlib.org/. 
+
+Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. 2018. Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. [ONLINE] Available at: https://docs.anaconda.com/anaconda/packages/py3.6_win-64.html. 
+
+pandas.read_csv ó pandas 0.22.0 documentation. 2018. pandas.read_csv ó pandas 0.22.0 documentation. [ONLINE] Available at: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html. 
+
+python - Official abbreviation for: import scipy as sp/sc - Stack Overflow. 2018. python - Official abbreviation for: import scipy as sp/sc - Stack Overflow. [ONLINE] Available at: https://stackoverflow.com/questions/36014733/official-abbreviation-for-import-scipy-as-sp-sc. 
+
+Spencer, H (2004) Fisher, Sir Ronald Aylmer (1890–1962), statistician and geneticist. Oxford Dictionary of National Biography., Available at: http://www.oxforddnb.com/view/10.1093/ref:odnb/9780198614128.001.0001/odnb-9780198614128-e-33146.
+
+Towards Data Science. 2018. A Quick Introduction to the Pandas Python Library. [ONLINE] Available at: https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673. 
+
+UCI Machine Learning Repository: Iris Data Set Description. 2018. UCI Machine Learning Repository: Iris Data Set. [ONLINE] Available at: http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.names. 
+
+UCI Machine Learning Repository: Iris Data Set. 2018. UCI Machine Learning Repository: Iris Data Set. [ONLINE] Available at: https://archive.ics.uci.edu/ml/datasets/iris.
+
+Upton, G., 2014. A Dictionary of Statistics 3e (Oxford Quick Reference). Oxford University Press
