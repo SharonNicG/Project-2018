@@ -19,12 +19,16 @@ df = pd.read_csv(datafile, header=None, names=headers)
 
 # View first 5 rows and headers 
 print(df.head())
+print('\n')
 
 # View instances i.e the number of rows and columns
 print(df.shape)
+print('\n')
 
 # Summary of basic data about Dataframe and it's data
 print(df.info())
+print('\n')
 
 # Check for missing attribute values
 print(df.count())
+print('\n')
