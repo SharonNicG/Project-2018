@@ -48,7 +48,7 @@ In this section, we will conduct a preliminary review of the Iris data set by ac
 
 #### Problem Definition
 
-The problem presented here is how to accurately predict the class of an Iris plant. Utilizing the Iris data setsup>[11](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>, which provides data on 150 samples of 3 Iris plants (50 samples of each class of Iris) and the corresponding length and width measurements of the sepal and petals for each plant, this investigation aims to predict the class of Iris of Iris plant based on the provided measurements.
+The problem presented here is how to accurately predict the class of an Iris plant. Utilizing the Iris data set<sup>[11](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>, which provides data on 150 samples of 3 Iris plants (50 samples of each class of Iris) and the corresponding length and width measurements of the sepal and petals for each plant, this investigation aims to predict the class of Iris of Iris plant based on the provided measurements.
 
 #### Preparation
 ##### Environment
@@ -67,6 +67,10 @@ In reviewing scientific computing packages for Python a few seem to meet the req
 Having identified the libraries that are needed an online search shows that the Python distribution Anaconda provides all of the required packages. Downloading version Python 3.6 from Anaconda.com, we are prompted at installation to install Microsoft's Visual Studio Code (a code editor that supports working with Python) Accepting this allows us to use Visual Studio code as the platform for developing code for this project.
 
 After installation, we can check that the Python environment is operating as expected. To do this we will write a short script to test the Python environment by importing each library, confirming which version it is operating and addressing any errors that present when the code is run. Running the script here returns no errors and so we can proceed with investigating the data. 
+
+##### Data
+
+Ahead of conducting an analysis of the data set, it is important to ensure it is in a useful format and that everything that is needed is included. The data selected for use here is the Iris Data Set available from the UCI Machine Learning Repository<sup>[11](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. WThere are various versions of the data set available, however, the UCI repository is a popular site that offers a wide range of free datasets which have been shown to be interesting - providing a good baseline for comparison. 
 
 ---
 ### Analysis
