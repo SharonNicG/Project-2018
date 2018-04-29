@@ -85,6 +85,12 @@ We can see from the output of the file that there are 5 columns of data, the fir
 
 Thinking about how we are going to use the data we need to consider if any preprocessing is required. The dataset description from UCI advises that the data has already undergone same preprocessing: 3 errors in Fisher's original work have been corrected, the number of attributes and instances have been identified, the authors advise that there are no missing attribute variables and the dataset is provided as tabular data. Given the relatively small size of the dataset (150 instances), it should be manageable as a whole without the need for sampling. 
 
+#### Summary Investigation
+
+Following on from the preliminary review of the data file we can proceed to a summary analysis of the data using the identified libraries. 
+
+To include the libraries in our script we use the 'import' statement. The libraries are imported here using the abbreviation conventions adopted by the Python community - NumPy(np), ScPy(sc), pandas(pd) and Matplotlib(plt). While SciPy has been abbreviated here to 'sc' it should be noted that the SciPy documentation recommends importing the required functions from SciPy and calling these as needed. The SciPy namespace only contains the functions imported from NumPy so better practice is to import the required function from within the library e.g. from 'SciPy' import 'stats'. At this point, we are not sure what functions are required so we'll retain the current library and review this as we progress. 
+
 ---
 ### Analysis
 ---
