@@ -51,6 +51,7 @@ In this section, we will conduct a preliminary review of the Iris data set by ac
 The problem presented here is how to accurately predict the class of an Iris plant. Utilizing the Iris data set<sup>[11](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>, which provides data on 150 samples of 3 Iris plants (50 samples of each class of Iris) and the corresponding length and width measurements of the sepal and petals for each plant, this investigation aims to predict the class of Iris of Iris plant based on the provided measurements.
 
 #### Preparation
+
 ##### Environment
 
 Before proceeding considering how the data will be used to address the classification problem and what tools will be needed to help with this is necessary.Based on Fisher's work, it can be assumed that this investigation will require work on numerical data in tables and arrays and that a number of mathematical computations of the data (e.g. mean) will be required. Additionally, visualizing the data for review and presentation will be beneficial. 
@@ -71,6 +72,10 @@ After installation, we can check that the Python environment is operating as exp
 ##### Data
 
 Ahead of conducting an analysis of the data set, it is important to ensure it is in a useful format and that everything that is needed is included. The data selected for use here is the Iris Data Set available from the UCI Machine Learning Repository<sup>[11](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. WThere are various versions of the data set available, however, the UCI repository is a popular site that offers a wide range of free datasets which have been shown to be interesting - providing a good baseline for comparison. 
+
+To facilitate work on the data set without the requirement for internet access a copy of the dataset file was downloaded and stored in the working directory in csv format. A backup version was also stored in case the data is changed in an unintended way during the investigation.
+
+At this point, we can look at the data file to familiarise ourselves with its content. To do that a short script is created starting with Python's built-in 'open()' function to access the file, check if it's content is readable, print the output of the file. Introducing the 'with' keyword means that we can repeat this instruction effectively as the file is opened, accessed and closed after the script has finished handling the object in fewer lines of code. A 'for' loop and split method (with parameters) is also applied to return the data in the file in an easier to read format.
 
 ---
 ### Analysis
