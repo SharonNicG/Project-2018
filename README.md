@@ -158,7 +158,7 @@ NumPy — NumPy. 2018. NumPy — NumPy. [ONLINE] Available at: http://www.numpy.
 
 Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. 2018. Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. [ONLINE] Available at: https://docs.anaconda.com/anaconda/packages/py3.6_win-64.html. 
 
-pandas.read_csv ó pandas 0.22.0 documentation. 2018. pandas.read_csv ó pandas 0.22.0 documentation. [ONLINE] Available at: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html. 
+pandas.read_csv pandas 0.22.0 documentation. 2018. pandas.read_csv pandas 0.22.0 documentation. [ONLINE] Available at: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html. 
 
 python - Official abbreviation for: import scipy as sp/sc - Stack Overflow. 2018. python - Official abbreviation for: import scipy as sp/sc - Stack Overflow. [ONLINE] Available at: https://stackoverflow.com/questions/36014733/official-abbreviation-for-import-scipy-as-sp-sc. 
 
