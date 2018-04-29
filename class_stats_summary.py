@@ -38,4 +38,6 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
 
     # Provides summary statistics for each class
     # Includes count, min, max, mean, std and percentiles for data in each column
-    print("Statistical summary of data: \n{}".format(df.groupby('class').describe()))
+    # Reformat inspired by https://stackoverflow.com/questions/42579148/get-columns-describe-from-group-by
+    # https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.stack.html
+    print("Statistical summary of data: \n{}".format(df.groupby('class').describe().stack()))
