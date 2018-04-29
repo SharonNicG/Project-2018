@@ -24,6 +24,6 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
     scatter_matrix(df)
 
     # Set title
-    plt.suptitle("Iris Data Set Histogram")
+    plt.suptitle("Iris Data Set Scatter Matrix")
 
     plt.show()
