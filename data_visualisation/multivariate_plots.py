@@ -1,6 +1,7 @@
 # Sharon Gibbons, 29-04-2018
 # Visualisation of data analysis on Iris data set
 # https://matplotlib.org/
+# https://pythonspot.com/matplotlib-scatterplot/
 
 # Load NumPy package
 import numpy as np 
