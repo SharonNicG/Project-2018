@@ -101,6 +101,12 @@ While the UCI repository provides details of the number of instances and attribu
 
 As identified earlier the csv file from UCI doesn't include headers. While we know what data has been collected for the dataset 9from our review of Fisher's work) we need to be able to link what is presented in the columns and rows to the correct measurement/variable. The first thing we need to do is load the csv file into Python using a 'with' function and then read it using the pandas function 'pd.read_csv'. Viewing the output of this shows separated columns of data with row numbers in the left margin. By creating a headers array and pass this new variable to the 'read-csv' function. To see a summary view of the column headers we can use the 'dataframe.head()' function which returns, de default, the first 5 rows of the dataset - allowing us to see the headers in place.
 
+###### Summary statistics
+
+Having looked at the data within the dataset file, we can now look at some of the information that can give us a simple description of the data.
+
+As each column contains the data relating to a measurement (i.e. sepal length, sepal width, petal length, petal width), we can conduct a summary review of the data in each column using a series of pandas commands.'df.min' and 'df.max' return the lowest and highest values for each column. 'df.mean'returns the average value of each column while 'df.mean' returns the mean or midpoint value for the range of values in each column. Standard deviation, which shows how much the values in each column differ from the mean value for that range, can be obtained using 'df.std'. The command 'df.describe' returns a selection of summary statistics for any column of numerical data including a count of records, minimum, maximum, mean and standard deviation values, and percentiles. 
+
 
 ---
 ### Analysis
