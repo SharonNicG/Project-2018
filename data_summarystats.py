@@ -17,20 +17,20 @@ headers = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class'
 df = pd.read_csv(datafile, names=headers)
 
 # Identify the lowest value in each column
-print(df.min())
+print("The lowest value in each column is: \n{}".format(df.min()))
 
 # Identifies the highest value in each column
-print(df.max())
+print("The highest value in each column is: \n{}".format(df.max()))
 
 # Provides mean/average value of each column
-print(df.mean())
+print("The mean value in each column is: \n{}".format(df.mean()))
 
 # Provides median/midpoint value for each column
-print(df.median())
+print("The median value in each column is: \n{}".format(df.median()))
 
 # Provides the standard deviation (std) for each column
-print(df.std())
+print("The standard deviation of the values in each column is: \n{}".format(df.std()))
 
 # Provides summary statistics for numerical columns
 # Includes count, min, max, mean, std and percentiles for data in each column
-print(df.describe())
+print("Statistical summary of data \n{}".format(df.describe()))
