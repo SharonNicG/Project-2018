@@ -115,7 +115,7 @@ While these statistics provide a general overview of the data for the purposes o
 ---
 ### Data visualisation
 
-Building on our understanding of data from the statistical analysis we can now look at data visualisation as a way to interpret and present this inormation.
+Building on our understanding of data from the statistical analysis we can now look at data visualization as a way to interpret and present this information.
 
 #### Univariate plots
 
