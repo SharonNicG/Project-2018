@@ -15,7 +15,10 @@ datafile = 'fishers_iris_data_set/iris.csv'
 headers = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 
 # Read csv data file with pandas read_csv function
-df = pd.read_csv(datafile, names=headers)
+df = pd.read_csv(datafile, header=None, names=headers)
+
+# View first 5 rows and headers 
+print(df.head())
 
 # View instances i.e the number of rows and columns
 print(df.shape)
