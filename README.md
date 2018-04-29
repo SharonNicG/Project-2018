@@ -110,9 +110,18 @@ As each column contains the data relating to a measurement (i.e. sepal length, s
 While these statistics provide a general overview of the data for the purposes of this investigation comparative statistics of each class/species of Iris plant would be informative. The above panda commands can be applied to each of the classes separately with the function 'groupby('class')' e.g. df.min becomes df.groupby('class').min()). For the summary statistics provided by 'df.describe' appending 'groupby('class')' produces an unwieldy table of information, the inclusion of the 'stack' function which reshapes the data by moving the innermost column index to become the innermost row index, allowing us to see the data related to each class group as individual tables. 
 
 ---
-### Analysis
----
-### Conclusions
+### Data visualisation
+
+Building on our understanding of data from the statistical analysis we can now look at data visualisation as a way to interpret and present this inormation.
+
+#### Univariate plots
+
+To begin we will look at univariate plots which help us to understand each attribute in more details. For this, we will use a 'box and whisker' plot which allows us to see the spread of the range of data in each column. From this, we can see where most of the data sit relative to the median value for that column/measurement and the quartiles for the range. For more details, we will also produce a histogram which displays data on a bar chart, showing it as a continuous range of data values. The box and whisker plots and the histograms clearly indicate the distribution of each attribute.
+
+#### Multivariate plots
+
+Multivariate plots help us to understand the relationship between values and for this, we will use a scatter plot. A scatter plot shows how the data as a collection of points. The scatter plot produced covers all pairs of attributes and shows a clear relationship between some of the variables. The grouping of some pairs indicates a high correlation between the data indicating that a relationship should be predicted i.e. the Iris plant could be classified.
+
 ---
 **Bibliography**
 
