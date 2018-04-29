@@ -74,7 +74,7 @@ After installation, we can check that the Python environment is operating as exp
 
 ##### Data
 
-Ahead of conducting an analysis of the data set, it is important to ensure it is in a useful format and that everything that is needed is included. The data selected for use here is the Iris Data Set available from the UCI Machine Learning Repository<sup>[17](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. WThere are various versions of the data set available, however, the UCI repository is a popular site that offers a wide range of free datasets which have been shown to be interesting - providing a good baseline for comparison. 
+Ahead of conducting an analysis of the data set, it is important to ensure it is in a useful format and that everything that is needed is included. The data selected for use here is the Iris Data Set available from the UCI Machine Learning Repository<sup>[17](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. Where are various versions of the data set available, however, the UCI repository is a popular site that offers a wide range of free datasets which have been shown to be interesting - providing a good baseline for comparison. 
 
 ###### Access dataset
 
@@ -128,6 +128,8 @@ Multivariate plots help us to understand the relationship between values and for
 ---
 **Bibliography**
 
+Anaconda. 2018. Anaconda. [ONLINE] Available at: https://www.anaconda.com/. 
+
 Anderson, E.. (1936). The Species Problem in Iris. Annals of the Missouri Botanical Garden. 23 (3), 457-509.
 
 API - importing from Scipy. SciPy v1.0.0 Reference Guide. 2018. API - importing from Scipy SciPy v1.0.0 Reference Guide. [ONLINE] Available at: https://docs.scipy.org/doc/scipy/reference/api.html#guidelines-for-importing-functions-from-scipy. 
@@ -150,13 +152,19 @@ Introduction to SciPy v1.0.0 Reference Guide. 2018. Introduction to SciPy v1.0.0
 
 Linear discriminant analysis - Wikipedia. 2018. Linear discriminant analysis - Wikipedia. [ONLINE] Available at: https://en.wikipedia.org/wiki/Linear_discriminant_analysis.
 
-Matplotlib: Python plotting ó Matplotlib 2.2.2 documentation. 2018. Matplotlib: Python plotting ó Matplotlib 2.2.2 documentation. [ONLINE] Available at: https://matplotlib.org/. 
+Matplotlib: Python plotting — Matplotlib 2.2.2 documentation. 2018. Matplotlib: Python plotting — Matplotlib 2.2.2 documentation. [ONLINE] Available at: https://matplotlib.org/. 
+
+NumPy — NumPy. 2018. NumPy — NumPy. [ONLINE] Available at: http://www.numpy.org/. 
 
 Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. 2018. Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. [ONLINE] Available at: https://docs.anaconda.com/anaconda/packages/py3.6_win-64.html. 
 
 pandas.read_csv ó pandas 0.22.0 documentation. 2018. pandas.read_csv ó pandas 0.22.0 documentation. [ONLINE] Available at: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html. 
 
 python - Official abbreviation for: import scipy as sp/sc - Stack Overflow. 2018. python - Official abbreviation for: import scipy as sp/sc - Stack Overflow. [ONLINE] Available at: https://stackoverflow.com/questions/36014733/official-abbreviation-for-import-scipy-as-sp-sc. 
+
+Python Data Analysis Library — pandas: Python Data Analysis Library. 2018. Python Data Analysis Library — pandas: Python Data Analysis Library.
+
+SciPy.org — SciPy.org. 2018. SciPy.org — SciPy.org. [ONLINE] Available at: https://www.scipy.org/. 
 
 Spencer, H (2004) Fisher, Sir Ronald Aylmer (1890–1962), statistician and geneticist. Oxford Dictionary of National Biography., Available at: http://www.oxforddnb.com/view/10.1093/ref:odnb/9780198614128.001.0001/odnb-9780198614128-e-33146.
 
