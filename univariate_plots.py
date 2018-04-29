@@ -26,8 +26,7 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
     
     # Set title and axes labels
     plt.suptitle("Iris Data Set Box and Whisker Plot")
-    plt.xlabel("Measurement in cms")
-    plt.ylabel("Number of instances")
+    plt.ylabel("Measurement in cms")
 
     # Histogram plot presenting data as a bar chart showing a continuous range of data values
     df.hist(edgecolor='black')
