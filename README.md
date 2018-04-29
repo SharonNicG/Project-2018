@@ -6,6 +6,10 @@
 ### Table of Contents
 
 - [Fisher and the Iris data set](https://github.com/SharonNicG/Project-2018/tree/master/fishers_iris_data_set)
+- [Data preparation](https://github.com/SharonNicG/Project-2018/tree/master/data_prep)
+- [Data summaries](https://github.com/SharonNicG/Project-2018/tree/master/data_summaries)
+- [Data visualisation](https://github.com/SharonNicG/Project-2018/tree/master/data_visualisation)
+- [Project instructions and plan](https://github.com/SharonNicG/Project-2018/tree/master/project_instructions_and_plan)
 
 ---
 ### Introduction
