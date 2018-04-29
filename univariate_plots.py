@@ -23,12 +23,16 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
     # Box and whisker plot to show range and median of data
     # https://matplotlib.org/api/_as_gen/matplotlib.pyplot.boxplot.html
     df.plot(kind='box', layout=(2,2), subplots=True)
+    
+    # Set title and axes labels
     plt.suptitle("Iris Data Set Box and Whisker Plot")
     plt.xlabel("Measurement in cms")
     plt.ylabel("Number of instances")
 
     # Histogram plot presenting data as a bar chart showing a continuous range of data values
     df.hist(edgecolor='black')
+
+    # Set title and axes labels
     plt.suptitle("Iris Data Set Histogram")
     plt.xlabel("Measurement in cms")
     plt.ylabel("Number of instances")
