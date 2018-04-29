@@ -33,9 +33,9 @@ From this analysis, we see both the differences and commonalities of the provide
 
 Fisher's 1936 paper, illustrated the use of this statistical method with a data set compiled by botanist Edgar Anderson - the classic Iris data set <sup>[8](http://www.jstor.org/stable/2394164)</sup>. 
 
-The Iris data set is a multivariate data set measuring the form and structure for related species of the flowering plant - Iris<sup>[9](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. The data set contains 150 records subdivided into 5 attributes: the species (class) of Iris plant with 50 samples drawn from each of 3 related species (Iris setosa, Iris versicolor and Iris virginica) and for each sample, a set of 4 measurements consisting of the length and width of the sepal and petal, in centimetres.
+The Iris data set is a multivariate data set measuring the form and structure for related species of the flowering plant - Iris<sup>[9](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. The dataset contains 150 records subdivided into 5 attributes: the species (class) of Iris plant with 50 samples drawn from each of 3 related species (Iris setosa, Iris versicolor and Iris virginica) and for each sample, a set of 4 measurements consisting of the length and width of the sepal and petal, in centimetres.
 
-Sepals, the outermost layer of the flower are easily distinguished on the Iris as they fall downwards away from the flower's centre. The petals of an Iris plant are internal of the sepals and are more upright and rigid<sup>[10](https://www.independent.ie/regionals/sligochampion/lifestyle/irises-coming-into-flower-in-gardens-and-in-the-wild-31252322.html)</sup>.
+Sepals, the outermost layer of the flower are easily distinguished on the Iris as they fall downwards away from the flower's centre. The petals of an Iris plant are internal to the sepals and are more upright and rigid<sup>[10](https://www.independent.ie/regionals/sligochampion/lifestyle/irises-coming-into-flower-in-gardens-and-in-the-wild-31252322.html)</sup>.
 
 Fisher applied the linear discriminant model to analyse the data set, using the length and width variables associated with the sepals and petals to classify and predict the class for each sample. He found that the Iris setosa class was linearly separable from the other classes. However, Iris versicolor and Iris virginica were not linearly separable from each other and that overlap between these two classes prevented full classification<sup>[11](https://doi.org/10.1093/ref:odnb/33146)</sup>.
 
@@ -44,7 +44,7 @@ The Iris data set and Fisher's paper are still extensively used. While there are
 ---
 ### Investigation
 
-In this section, we will conduct a preliminary review of the Iris data set by accessing and reading the data set file, familiarising ourselves with its content and then conducting a summary review of the data.
+In this section, we will conduct a preliminary review of the Iris data set by accessing and reading the dataset file, familiarising ourselves with its content and then conducting a summary review of the data.
 
 #### Problem Definition
 
@@ -89,19 +89,19 @@ Thinking about how we are going to use the data we need to consider if any prepr
 
 Following on from the preliminary review of the data file we can proceed to a summary analysis of the data using the identified libraries. 
 
-###### Importing libraries
+##### Importing libraries
 
 To include the libraries in our script we use the 'import' statement. The libraries are imported here using the abbreviation conventions adopted by the Python community - NumPy(np), ScPy(sc), pandas(pd) and Matplotlib(plt). While SciPy has been abbreviated here to 'sc' it should be noted that the SciPy documentation recommends importing the required functions from SciPy and calling these as needed. The SciPy namespace only contains the functions imported from NumPy so better practice is to import the required function from within the library e.g. from 'SciPy' import 'stats'. At this point, we are not sure what functions are required so we'll retain the current library and review this as we progress. 
 
-###### Summary of dataset
+##### Summary of dataset
 
 While the UCI repository provides details of the number of instances and attributes, to ensure we haven't lost anything in transferring/copying the file we can check this also. using the pandas command 'df.shape()' we can see the number of columns and rows in the dataset. We can see more details on the data structure using the 'df.info()' method which provides index, datatype, and memory information - and confirms that we have 150 results recorded in each column (4 numeric/floats and 1 text/object). Using 'df.count()', we can identify the any NULL observations. 
 
-###### Assigning headers
+##### Assigning headers
 
 As identified earlier the csv file from UCI doesn't include headers. While we know what data has been collected for the dataset 9from our review of Fisher's work) we need to be able to link what is presented in the columns and rows to the correct measurement/variable. The first thing we need to do is load the csv file into Python using a 'with' function and then read it using the pandas function 'pd.read_csv'. Viewing the output of this shows separated columns of data with row numbers in the left margin. By creating a headers array and pass this new variable to the 'read-csv' function. To see a summary view of the column headers we can use the 'dataframe.head()' function which returns, de default, the first 5 rows of the dataset - allowing us to see the headers in place.
 
-###### Summary statistics
+##### Summary statistics
 
 Having looked at the data within the dataset file, we can now look at some of the information that can give us a simple description of the data.
 
