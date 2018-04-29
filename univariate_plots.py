@@ -20,10 +20,12 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
     # Read csv data file with pandas read_csv function
     df = pd.read_csv(datafile, header=None, names=headers)
 
-    # box and whisker plot to show range and median of data
+    # Box and whisker plot to show range and median of data
     # https://matplotlib.org/api/_as_gen/matplotlib.pyplot.boxplot.html
     df.plot(kind='box', layout=(2,2), subplots=True)
 
-    # histogram plot presenting data as a bar chart showing a continuous range of data values
+    # Histogram plot presenting data as a bar chart showing a continuous range of data values
     df.hist()
+
+    # Display plots
     plt.show()
