@@ -148,6 +148,8 @@ Independent.ie. 2018. Irises coming into flower in gardens and in the wild - Ind
 
 Introduction to SciPy v1.0.0 Reference Guide. 2018. Introduction to SciPy v1.0.0 Reference Guide. [ONLINE] Available at: https://docs.scipy.org/doc/scipy/reference/tutorial/general.html. 
 
+Linear discriminant analysis - Wikipedia. 2018. Linear discriminant analysis - Wikipedia. [ONLINE] Available at: https://en.wikipedia.org/wiki/Linear_discriminant_analysis.
+
 Matplotlib: Python plotting ó Matplotlib 2.2.2 documentation. 2018. Matplotlib: Python plotting ó Matplotlib 2.2.2 documentation. [ONLINE] Available at: https://matplotlib.org/. 
 
 Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. 2018. Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. [ONLINE] Available at: https://docs.anaconda.com/anaconda/packages/py3.6_win-64.html. 
@@ -161,7 +163,5 @@ Spencer, H (2004) Fisher, Sir Ronald Aylmer (1890–1962), statistician and gene
 Towards Data Science. 2018. A Quick Introduction to the Pandas Python Library. [ONLINE] Available at: https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673. 
 
 UCI Machine Learning Repository: Iris Data Set Description. 2018. UCI Machine Learning Repository: Iris Data Set. [ONLINE] Available at: http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.names. 
-
-UCI Machine Learning Repository: Iris Data Set. 2018. UCI Machine Learning Repository: Iris Data Set. [ONLINE] Available at: https://archive.ics.uci.edu/ml/datasets/iris.
 
 Upton, G., 2014. A Dictionary of Statistics 3e (Oxford Quick Reference). Oxford University Press
