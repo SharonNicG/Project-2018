@@ -21,5 +21,5 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
     df = pd.read_csv(datafile, header=None, names=headers)
 
     # Scatterplot matrix to help identify linear correlation between multiple variables
-    scatter_matrix(dataset)
+    scatter_matrix(df)
     plt.show()
