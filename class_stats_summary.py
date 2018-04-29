@@ -36,6 +36,6 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
     print("Below is the standard deviation of each attribute, by class: \n{}".format(df.groupby('class').std()))
     print('\n')
 
-    # Provides summary statistics for numerical columns
+    # Provides summary statistics for each class
     # Includes count, min, max, mean, std and percentiles for data in each column
-    print("Statistical summary of data: \n{}".format(df.describe()))
+    print("Statistical summary of data: \n{}".format(df.groupby('class').describe()))
