@@ -89,7 +89,13 @@ Thinking about how we are going to use the data we need to consider if any prepr
 
 Following on from the preliminary review of the data file we can proceed to a summary analysis of the data using the identified libraries. 
 
+###### Importing libraries
+
 To include the libraries in our script we use the 'import' statement. The libraries are imported here using the abbreviation conventions adopted by the Python community - NumPy(np), ScPy(sc), pandas(pd) and Matplotlib(plt). While SciPy has been abbreviated here to 'sc' it should be noted that the SciPy documentation recommends importing the required functions from SciPy and calling these as needed. The SciPy namespace only contains the functions imported from NumPy so better practice is to import the required function from within the library e.g. from 'SciPy' import 'stats'. At this point, we are not sure what functions are required so we'll retain the current library and review this as we progress. 
+
+###### Summary of dataset
+
+While the UCI repository provides details of the number of instances and attributes, to ensure we haven't lost anything in transferring/copying the file we can check this also. using the pandas command 'df.shape()' we can see the number of columns and rows in the dataset. We can see more details on the data structure using the 'df.info()' method which provides index, datatype, and memory information - and confirms that we have 150 results recorded in each column (4 numeric/floats and 1 text/object). Using 'df.count()', we can identify the any NULL observations. 
 
 ---
 ### Analysis
