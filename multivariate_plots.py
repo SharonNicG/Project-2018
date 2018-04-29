@@ -22,4 +22,8 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
 
     # Scatterplot matrix to help identify linear correlation between multiple variables
     scatter_matrix(df)
+
+    # Set title
+    plt.suptitle("Iris Data Set Histogram")
+
     plt.show()
