@@ -79,6 +79,8 @@ To facilitate work on the data set without the requirement for internet access a
 
 At this point, we can look at the data file to familiarise ourselves with its content. To do that a short script is created starting with Python's built-in 'open()' function to access the file, check if it's content is readable, print the output of the file. Introducing the 'with' keyword means that we can repeat this instruction effectively as the file is opened, accessed and closed after the script has finished handling the object in fewer lines of code. A 'for' loop and split method (with parameters) is also applied to return the data in the file in an easier to read format.
 
+We can see from the output of the file that there are 5 columns of data, the first 4 hold numeric data (floats) and the 5th contains text (string). we can also see that the data is sorted by categories indicated in the 5th column. There is no discernable secondary ordering and the rows and columns of the table have no headings.
+
 ###### Preprocess data
 
 Thinking about how we are going to use the data we need to consider if any preprocessing is required. The dataset description from UCI advises that the data has already undergone same preprocessing: 3 errors in Fisher's original work have been corrected, the number of attributes and instances have been identified, the authors advise that there are no missing attribute variables and the dataset is provided as tabular data. Given the relatively small size of the dataset (150 instances), it should be manageable as a whole without the need for sampling. 
