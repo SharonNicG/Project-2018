@@ -30,6 +30,7 @@ with open('fishers_iris_data_set/iris.csv') as datafile:
     plt.ylabel("Measurement in cms")
 
     # Histogram plot presenting data as a bar chart showing a continuous range of data values
+    # https://matplotlib.org/gallery/statistics/hist.html
     df.hist(edgecolor='black')
 
     # Set title and axes labels
