@@ -46,6 +46,50 @@ The Iris data set and Fisher's paper are still extensively used. While there are
 
 In this section, we will conduct a preliminary review of the Iris data set by accessing and reading the data set file, familiarising ourselves with its content and then conducting a summary review of the data.
 
+#### Problem Definition
+
+The problem presented here is how to accurately predict the class of an Iris plant. Utilizing the Iris data set<sup>[11](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>, which provides data on 150 samples of 3 Iris plants (50 samples of each class of Iris) and the corresponding length and width measurements of the sepal and petals for each plant, this investigation aims to predict the class of Iris of Iris plant based on the provided measurements.
+
+#### Preparation
+
+##### Environment
+
+Before proceeding considering how the data will be used to address the classification problem and what tools will be needed to help with this is necessary.Based on Fisher's work, it can be assumed that this investigation will require work on numerical data in tables and arrays and that a number of mathematical computations of the data (e.g. mean) will be required. Additionally, visualizing the data for review and presentation will be beneficial. 
+
+In reviewing scientific computing packages for Python a few seem to meet the requirements of this investigation.
+* NumPy (Numerical Python) is an indispensable library for scientific computing in Python. It is the library that the other tools we'll be using are built upon. NumPy allows us to work with arrays and data structures easily and quickly and crucially it performs calculations across entire arrays.
+
+* Pandas (Python Data Analysis Library) is a library for the Python language, built on the numPy package, that facilitates the manipulation of data structures (e.g. tables) making data easier to work with and conduct an analysis of.
+
+* SciPy is an expanded library for scientific computing, built on the NumPy package. It includes a module for linear algebra which based on Fisher's work ought to be useful in classifying the samples from the dataset.
+
+* Matplotlib is an extension of NumPy that generated 2D graphs, such as plots, histograms and scatter plot that enables the visualization of data to identify and present analysis and result. 
+
+Having identified the libraries that are needed an online search shows that the Python distribution Anaconda provides all of the required packages. Downloading version Python 3.6 from Anaconda.com, we are prompted at installation to install Microsoft's Visual Studio Code (a code editor that supports working with Python) Accepting this allows us to use Visual Studio code as the platform for developing code for this project.
+
+After installation, we can check that the Python environment is operating as expected. To do this we will write a short script to test the Python environment by importing each library, confirming which version it is operating and addressing any errors that present when the code is run. Running the script here returns no errors and so we can proceed with investigating the data. 
+
+##### Data
+
+Ahead of conducting an analysis of the data set, it is important to ensure it is in a useful format and that everything that is needed is included. The data selected for use here is the Iris Data Set available from the UCI Machine Learning Repository<sup>[11](http://archive.ics.uci.edu/ml/datasets/Iris)</sup>. WThere are various versions of the data set available, however, the UCI repository is a popular site that offers a wide range of free datasets which have been shown to be interesting - providing a good baseline for comparison. 
+
+###### Access dataset
+
+To facilitate work on the data set without the requirement for internet access a copy of the dataset file was downloaded and stored in the working directory in csv format. A backup version was also stored in case the data is changed in an unintended way during the investigation.
+
+At this point, we can look at the data file to familiarise ourselves with its content. To do that a short script is created starting with Python's built-in 'open()' function to access the file, check if it's content is readable, print the output of the file. Introducing the 'with' keyword means that we can repeat this instruction effectively as the file is opened, accessed and closed after the script has finished handling the object in fewer lines of code. A 'for' loop and split method (with parameters) is also applied to return the data in the file in an easier to read format.
+
+We can see from the output of the file that there are 5 columns of data, the first 4 hold numeric data (floats) and the 5th contains text (string). we can also see that the data is sorted by categories indicated in the 5th column. There is no discernable secondary ordering and the rows and columns of the table have no headings.
+
+###### Preprocess data
+
+Thinking about how we are going to use the data we need to consider if any preprocessing is required. The dataset description from UCI advises that the data has already undergone same preprocessing: 3 errors in Fisher's original work have been corrected, the number of attributes and instances have been identified, the authors advise that there are no missing attribute variables and the dataset is provided as tabular data. Given the relatively small size of the dataset (150 instances), it should be manageable as a whole without the need for sampling. 
+
+#### Summary Investigation
+
+Following on from the preliminary review of the data file we can proceed to a summary analysis of the data using the identified libraries. 
+
+To include the libraries in our script we use the 'import' statement. The libraries are imported here using the abbreviation conventions adopted by the Python community - NumPy(np), ScPy(sc), pandas(pd) and Matplotlib(plt). While SciPy has been abbreviated here to 'sc' it should be noted that the SciPy documentation recommends importing the required functions from SciPy and calling these as needed. The SciPy namespace only contains the functions imported from NumPy so better practice is to import the required function from within the library e.g. from 'SciPy' import 'stats'. At this point, we are not sure what functions are required so we'll retain the current library and review this as we progress. 
 
 ---
 ### Analysis
