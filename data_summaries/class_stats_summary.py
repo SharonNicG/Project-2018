@@ -1,5 +1,6 @@
 # Sharon Gibbons, 29-04-2018
 # Summary review of Iris data set, by class
+# http://www.datasciencemadesimple.com/group-dataframe-python-pandas-group-function-pandas/
 
 # Load NumPy package
 import numpy as np 
