@@ -115,3 +115,42 @@ While these statistics provide a general overview of the data for the purposes o
 ### Conclusions
 ---
 **Bibliography**
+
+Anderson, E.. (1936). The Species Problem in Iris. Annals of the Missouri Botanical Garden. 23 (3), 457-509.
+
+API - importing from Scipy ó SciPy v1.0.0 Reference Guide. 2018. API - importing from Scipy ó SciPy v1.0.0 Reference Guide. [ONLINE] Available at: https://docs.scipy.org/doc/scipy/reference/api.html#guidelines-for-importing-functions-from-scipy. 
+
+Bronshtein, A., 2017. A Quick Introduction to the ìPandasî Python Library. Towards Data Science. Available at:  https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673
+
+Bronshtein, A., 2017. A Quick Introduction to the NumPy Library ñ Towards Data Science. Towards Data Science. Available at: https://towardsdatascience.com/a-quick-introduction-to-the-numpy-library-6f61b7dee4db [Accessed April 28, 2018].
+
+Butterfield, A., Ngondi, G.E. and Kerr, A. (2016) A Dictionary of Computer Science, 7th edn., Oxford: Oxford University Press.
+
+DataCamp Community. 2018. Scipy Tutorial: Vectors and Arrays (Linear Algebra) (article) - DataCamp. [ONLINE] Available at: https://www.datacamp.com/community/tutorials/python-scipy-tutorial.
+
+Dua, D. and Karra Taniskidou, E.. (2017). Iris Data Set. Available: http://archive.ics.uci.edu/ml/datasets/Iris. 
+
+Fisher, R.A.. (1936). The Use of Multiple Measurements in Taxonomic Problems. Annals of Human Genetics. 7 (2), 179–188.
+
+Independent.ie. 2018. Irises coming into flower in gardens and in the wild - Independent.ie. [ONLINE] Available at: https://www.independent.ie/regionals/sligochampion/lifestyle/ Irises-coming-into-flower-in-gardens-and-in-the-wild-31252322.html. 
+
+Introduction ó SciPy v1.0.0 Reference Guide. 2018. Introduction ó SciPy v1.0.0 Reference Guide. [ONLINE] Available at: https://docs.scipy.org/doc/scipy/reference/tutorial/general.html. 
+
+Matplotlib: Python plotting ó Matplotlib 2.2.2 documentation. 2018. Matplotlib: Python plotting ó Matplotlib 2.2.2 documentation. [ONLINE] Available at: https://matplotlib.org/. 
+
+Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. 2018. Packages for 64-bit Windows with Python 3.6 | Anaconda: Documentation. [ONLINE] Available at: https://docs.anaconda.com/anaconda/packages/py3.6_win-64.html. 
+
+pandas.read_csv ó pandas 0.22.0 documentation. 2018. pandas.read_csv ó pandas 0.22.0 documentation. [ONLINE] Available at: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_csv.html. 
+
+python - Official abbreviation for: import scipy as sp/sc - Stack Overflow. 2018. python - Official abbreviation for: import scipy as sp/sc - Stack Overflow. [ONLINE] Available at: https://stackoverflow.com/questions/36014733/official-abbreviation-for-import-scipy-as-sp-sc. 
+
+Spencer, H (2004) Fisher, Sir Ronald Aylmer (1890–1962), statistician and geneticist. Oxford Dictionary of National Biography., Available at: http://www.oxforddnb.com/view/10.1093/ref:odnb/9780198614128.001.0001/odnb-9780198614128-e-33146.
+
+Towards Data Science. 2018. A Quick Introduction to the ìPandasî Python Library. [ONLINE] Available at: https://towardsdatascience.com/a-quick-introduction-to-the-pandas-python-library-f1b678f34673. 
+
+UCI Machine Learning Repository: Iris Data Set Description. 2018. UCI Machine Learning Repository: Iris Data Set. [ONLINE] Available at: http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.names. 
+
+UCI Machine Learning Repository: Iris Data Set. 2018. UCI Machine Learning Repository: Iris Data Set. [ONLINE] Available at: https://archive.ics.uci.edu/ml/datasets/iris.
+
+Upton, G., 2014. A Dictionary of Statistics 3e (Oxford Quick Reference). Oxford University Press
+
